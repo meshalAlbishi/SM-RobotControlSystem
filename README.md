@@ -1,6 +1,5 @@
 # SM-RobotControlSystem
-a website that enable you to control the robot arm
-
+a website that enable you to control the robot arm that designed in [RobotArmCircuitDiagram](https://github.com/meshalAlbishi/SM-RobotArmCircuitDiagram)
 
 still in progress :')
 
