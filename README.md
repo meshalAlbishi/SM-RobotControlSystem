@@ -4,7 +4,7 @@ a website that enable you to control the robot arm that designed in [RobotArmCir
 still in progress :')
 
 ## What is the Task?
-the repositories include the following tasks:
+the repository will include the following tasks:
 1. Design the control panel UI
 2. Create a database to control the robot arm, I'll use MySQL
 3. Connect teh database with control panel
