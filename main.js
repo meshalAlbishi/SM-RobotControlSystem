@@ -1,8 +1,9 @@
+var power = $('#power');
 var sliders = document.getElementsByClassName('range');
 var slidersValue = document.getElementsByClassName('range-value');
 
 addSlidersEvents();
-
+powerEvenet();
 
 // sliders event functions 
 function addSlidersEvents() {
@@ -18,5 +19,20 @@ function addSlidersEvents() {
 function changeRangeValue(slidersValue, index, value) {
     slidersValue[index].textContent = value;
 }
-
 // ---------------------------------------------------------------
+
+// checkbox event
+
+function powerEvenet() {
+    power.click(() => {
+        console.log("in");
+        var isOn = $('#power').is(":checked");
+        $.ajax({
+            url: "includes/fetchLast.php",
+            method: "POST",
+            data: { power: isOn },
+            success: (data) => window.location.href = 'includes/fetchLast.php'
+        });
+
+    });
+}

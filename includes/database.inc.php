@@ -8,6 +8,7 @@ $dbName = "arm_control";
 $conn = mysqli_connect($dbServerName, $dbUsername, $dbPassword, $dbName);
 
 
+// motors functions
 function getMotorsValue()
 {
     $sql = "SELECT motor_id, degree FROM motors;";
@@ -39,5 +40,34 @@ function updateMotors()
 function insertMotorsLog($motor_id, $degree)
 {
     $sql = "insert into motors_log(motor_id, degree, log_date) values({$motor_id}, {$degree}, now());";
+    mysqli_query($GLOBALS['conn'], $sql);
+}
+
+// arm power functions
+function getArmPower()
+{
+
+    $sql = "SELECT power FROM arm where arm_id=1;";
+    $result = mysqli_query($GLOBALS['conn'], $sql);
+
+    return mysqli_fetch_all($result)[0][0];
+}
+
+function updatePower()
+{
+    echo 'hi';
+    $data = $_POST['power'];
+    echo $data;
+    $sql = "update arm set power = ($data) where arm_id=1;";
+
+    mysqli_query($GLOBALS['conn'], $sql);
+
+    // insert to the log
+    insertArmLog($data);
+}
+
+function insertArmLog($data)
+{
+    $sql = "insert into arm_log(arm_id, power, log_date) values(1, {$data}, now());";
     mysqli_query($GLOBALS['conn'], $sql);
 }

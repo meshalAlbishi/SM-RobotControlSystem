@@ -2,6 +2,7 @@
 include_once('includes/database.inc.php');
 
 $engineValues = getMotorsValue();
+$isPower = getArmPower();
 
 if (isset($_POST['submit'])) {
 
@@ -66,8 +67,7 @@ if (isset($_POST['submit'])) {
                 <div class="buttons">
                     <?php echo $enign ?>
                     <button type="submit" name="submit">Save</button>
-                    <input type="checkbox">
-                </div>
+                    <input id="power" type="checkbox" <?php echo ($isPower == 1 ? 'checked' : ''); ?>>
 
             </form>
 
