@@ -6,7 +6,7 @@ It's a website enable you to control the robot arm that designed in [RobotArmCir
 the repository will include the following tasks:
 1. Design the control panel UI
 2. Create a database to control the robot arm, I'll use MySQL
-3. Connect teh database with control panel
+3. Connect the database with control panel
 4. Create a php page to connect the database with the actual hardware 
 
 
