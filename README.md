@@ -22,6 +22,7 @@ The database contains 4 table
 4. Motor log ->  to keep tracking each motor status and the date of last modify
 
 
+![](https://github.com/meshalAlbishi/SM-RobotControlSystem/blob/main/db_files/db%20structure.png)
 ## Demo
 it will be available to demo from here: 
 http://meshal-robot-control-system-v2.great-site.net/
