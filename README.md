@@ -24,8 +24,9 @@ The database contains 4 table
 
 ![](https://github.com/meshalAlbishi/SM-RobotControlSystem/blob/main/db_files/db%20structure.png)
 ## Demo
-Vedio demo available here [here] (https://github.com/meshalAlbishi/SM-RobotControlSystem/blob/main/localhost%20demo.mp4)
+Vedio demo available [here](https://github.com/meshalAlbishi/SM-RobotControlSystem/blob/main/localhost%20demo.mp4)
 
 it will be available to demo from an online hosting: 
 http://meshal-robot-control-system-v2.great-site.net/
+
 but it's not working yet :') , still in progress..
